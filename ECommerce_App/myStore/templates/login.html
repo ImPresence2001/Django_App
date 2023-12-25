@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website: Sign-In</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form method="post" action="{% url 'register_view' %}">
+				<label for="chk" aria-hidden="true">Sign up</label>
+                {% csrf_token %}
+				<input type="text" name="{{ form.username.name }}" id="{{ form.username.id_for_label }}" placeholder="{{ form.username.label }}" maxlength="100" required>
+				<input type="email" name="{{ form.email.name }}" id="{{ form.email.id_for_label }}" placeholder="{{ form.email.label }}" required>
+				<input type="password" name="{{ form.password.name }}" id="{{ form.password.id_for_label }}" placeholder="{{ form.password.label }}" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="login">
+            <form method="post" action="{% url 'login_view' %}">
+				<label for="chk" aria-hidden="true">Login</label>
+                {% csrf_token %}
+				<input type="email" name="{{ form.email.name }}" id="{{ form.email.id_for_label }}" placeholder="{{ form.email.label }}" required>
+				<input type="password" name="{{ form.password.name }}" id="{{ form.password.id_for_label }}" placeholder="{{ form.password.label }}" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

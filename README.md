@@ -1,7 +1,6 @@
 My first Django Web
 
 12/25/2023 Patch 1.0
-
 *Add root/base files
 
 

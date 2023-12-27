@@ -12,3 +12,7 @@ Added Login Form (Forms.py, Views.py, Urls.py, & Models.py)
 HTML Web (templates/login.html)
 
 Style CSS (static/style.css)
+
+**12/27/2023 Patch 1.2**
+
+Added Streamlit as my frontend

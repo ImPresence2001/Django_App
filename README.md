@@ -4,6 +4,7 @@ My first Django Web
 
 Add root/base files
 
+.
 
 **12/25/2023 Patch 1.1**
 
@@ -12,6 +13,8 @@ Added Login Form (Forms.py, Views.py, Urls.py, & Models.py)
 HTML Web (templates/login.html)
 
 Style CSS (static/style.css)
+
+.
 
 **12/27/2023 Patch 1.2**
 

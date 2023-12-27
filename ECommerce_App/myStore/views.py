@@ -1,5 +1,13 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from .forms import RegistrationForm, LoginForm
+
+def streamlit_view(request):
+    # Run the Streamlit app as a subprocess
+    import subprocess
+    subprocess.run(["streamlit", "run", "myStore/streamlit_ecommerce_app.py"])
+
+    return HttpResponse()
 
 def register_view(request):
     if request.method == 'POST':

@@ -1,8 +1,8 @@
 My first Django Web
 
-**12/25/2023 Patch 1.0**
+**12/27/2023 Patch 1.2**
 
-Add root/base files
+Added Streamlit as my frontend
 
 .
 
@@ -16,6 +16,6 @@ Style CSS (static/style.css)
 
 .
 
-**12/27/2023 Patch 1.2**
+**12/25/2023 Patch 1.0**
 
-Added Streamlit as my frontend
+Add root/base files
